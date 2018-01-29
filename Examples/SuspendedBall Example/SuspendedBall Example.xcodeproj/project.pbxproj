@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA918EF8201F025D00640404 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA918EF7201F025D00640404 /* ViewController.m */; };
+		AA918EFB201F025D00640404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA918EF9201F025D00640404 /* Main.storyboard */; };
+		AA918EFD201F025D00640404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA918EFC201F025D00640404 /* Assets.xcassets */; };
+		AA918F00201F025D00640404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA918EFE201F025D00640404 /* LaunchScreen.storyboard */; };
+		AA918F03201F025D00640404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA918F02201F025D00640404 /* main.m */; };
+		AA918F0C201F054000640404 /* SuspendedBall.m in Sources */ = {isa = PBXBuildFile; fileRef = AA918F0B201F054000640404 /* SuspendedBall.m */; };
+		AA918F75201F2EA700640404 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA918F73201F28E800640404 /* ImageIO.framework */; };
+		AA918F76201F320800640404 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA918EF4201F025D00640404 /* AppDelegate.m */; };
+		AA918F78201F35AE00640404 /* girl.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA918F77201F35AE00640404 /* girl.gif */; };
+		E836A2DB1D0DECD174C063EA /* libPods-SuspendedBall Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE69A0F348D21E0E8E27C36 /* libPods-SuspendedBall Example.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72A7866BBAC2981A6F0854E3 /* Pods-SuspendedBall Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuspendedBall Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuspendedBall Example/Pods-SuspendedBall Example.release.xcconfig"; sourceTree = "<group>"; };
+		AA918EF0201F025D00640404 /* SuspendedBall Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuspendedBall Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA918EF3201F025D00640404 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA918EF4201F025D00640404 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA918EF6201F025D00640404 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA918EF7201F025D00640404 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA918EFA201F025D00640404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA918EFC201F025D00640404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA918EFF201F025D00640404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA918F01201F025D00640404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA918F02201F025D00640404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA918F0A201F054000640404 /* SuspendedBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspendedBall.h; sourceTree = "<group>"; };
+		AA918F0B201F054000640404 /* SuspendedBall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspendedBall.m; sourceTree = "<group>"; };
+		AA918F73201F28E800640404 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AA918F77201F35AE00640404 /* girl.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = girl.gif; sourceTree = "<group>"; };
+		BEE69A0F348D21E0E8E27C36 /* libPods-SuspendedBall Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuspendedBall Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E833BCFEDAD9629741C4F7EA /* Pods-SuspendedBall Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuspendedBall Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuspendedBall Example/Pods-SuspendedBall Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA918EED201F025D00640404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA918F75201F2EA700640404 /* ImageIO.framework in Frameworks */,
+				E836A2DB1D0DECD174C063EA /* libPods-SuspendedBall Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9735EBBFF2B6FAE93131D798 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E833BCFEDAD9629741C4F7EA /* Pods-SuspendedBall Example.debug.xcconfig */,
+				72A7866BBAC2981A6F0854E3 /* Pods-SuspendedBall Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA918EE7201F025D00640404 = {
+			isa = PBXGroup;
+			children = (
+				AA918F09201F051400640404 /* SuspendedBall */,
+				AA918EF2201F025D00640404 /* SuspendedBall Example */,
+				AA918EF1201F025D00640404 /* Products */,
+				AA918F72201F28E700640404 /* Frameworks */,
+				9735EBBFF2B6FAE93131D798 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AA918EF1201F025D00640404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA918EF0201F025D00640404 /* SuspendedBall Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA918EF2201F025D00640404 /* SuspendedBall Example */ = {
+			isa = PBXGroup;
+			children = (
+				AA918EF3201F025D00640404 /* AppDelegate.h */,
+				AA918EF4201F025D00640404 /* AppDelegate.m */,
+				AA918EF6201F025D00640404 /* ViewController.h */,
+				AA918EF7201F025D00640404 /* ViewController.m */,
+				AA918EF9201F025D00640404 /* Main.storyboard */,
+				AA918EFC201F025D00640404 /* Assets.xcassets */,
+				AA918EFE201F025D00640404 /* LaunchScreen.storyboard */,
+				AA918F01201F025D00640404 /* Info.plist */,
+				AA918F02201F025D00640404 /* main.m */,
+			);
+			path = "SuspendedBall Example";
+			sourceTree = "<group>";
+		};
+		AA918F09201F051400640404 /* SuspendedBall */ = {
+			isa = PBXGroup;
+			children = (
+				AA918F77201F35AE00640404 /* girl.gif */,
+				AA918F0A201F054000640404 /* SuspendedBall.h */,
+				AA918F0B201F054000640404 /* SuspendedBall.m */,
+			);
+			path = SuspendedBall;
+			sourceTree = "<group>";
+		};
+		AA918F72201F28E700640404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA918F73201F28E800640404 /* ImageIO.framework */,
+				BEE69A0F348D21E0E8E27C36 /* libPods-SuspendedBall Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA918EEF201F025D00640404 /* SuspendedBall Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA918F06201F025D00640404 /* Build configuration list for PBXNativeTarget "SuspendedBall Example" */;
+			buildPhases = (
+				20DB660B6C35CCCA929D3394 /* [CP] Check Pods Manifest.lock */,
+				AA918EEC201F025D00640404 /* Sources */,
+				AA918EED201F025D00640404 /* Frameworks */,
+				AA918EEE201F025D00640404 /* Resources */,
+				4D7E2388CD7AF44A3E70713B /* [CP] Embed Pods Frameworks */,
+				7AB044CDE163417220E18946 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SuspendedBall Example";
+			productName = "SuspendedBall Example";
+			productReference = AA918EF0201F025D00640404 /* SuspendedBall Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA918EE8201F025D00640404 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "MTX Software Technology Co.,Ltd.";
+				TargetAttributes = {
+					AA918EEF201F025D00640404 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AA918EEB201F025D00640404 /* Build configuration list for PBXProject "SuspendedBall Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA918EE7201F025D00640404;
+			productRefGroup = AA918EF1201F025D00640404 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA918EEF201F025D00640404 /* SuspendedBall Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA918EEE201F025D00640404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA918F00201F025D00640404 /* LaunchScreen.storyboard in Resources */,
+				AA918F78201F35AE00640404 /* girl.gif in Resources */,
+				AA918EFD201F025D00640404 /* Assets.xcassets in Resources */,
+				AA918EFB201F025D00640404 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20DB660B6C35CCCA929D3394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D7E2388CD7AF44A3E70713B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuspendedBall Example/Pods-SuspendedBall Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB044CDE163417220E18946 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuspendedBall Example/Pods-SuspendedBall Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA918EEC201F025D00640404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA918F76201F320800640404 /* AppDelegate.m in Sources */,
+				AA918F0C201F054000640404 /* SuspendedBall.m in Sources */,
+				AA918EF8201F025D00640404 /* ViewController.m in Sources */,
+				AA918F03201F025D00640404 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA918EF9201F025D00640404 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA918EFA201F025D00640404 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA918EFE201F025D00640404 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA918EFF201F025D00640404 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA918F04201F025D00640404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA918F05201F025D00640404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA918F07201F025D00640404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E833BCFEDAD9629741C4F7EA /* Pods-SuspendedBall Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U5763E89G;
+				INFOPLIST_FILE = "SuspendedBall Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SuspendedBall-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA918F08201F025D00640404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A7866BBAC2981A6F0854E3 /* Pods-SuspendedBall Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U5763E89G;
+				INFOPLIST_FILE = "SuspendedBall Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SuspendedBall-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA918EEB201F025D00640404 /* Build configuration list for PBXProject "SuspendedBall Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA918F04201F025D00640404 /* Debug */,
+				AA918F05201F025D00640404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA918F06201F025D00640404 /* Build configuration list for PBXNativeTarget "SuspendedBall Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA918F07201F025D00640404 /* Debug */,
+				AA918F08201F025D00640404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA918EE8201F025D00640404 /* Project object */;
+}

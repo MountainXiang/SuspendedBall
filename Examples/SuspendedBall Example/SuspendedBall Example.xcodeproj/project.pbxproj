@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA8CD477201FF8D600FECF25 /* SuspendedBall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8CD475201FF8D600FECF25 /* SuspendedBall@2x.png */; };
+		AA8CD478201FF8D600FECF25 /* SuspendedBall@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8CD476201FF8D600FECF25 /* SuspendedBall@3x.png */; };
+		AA8CD47A201FFE6C00FECF25 /* redpacket.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA8CD479201FFE6C00FECF25 /* redpacket.gif */; };
 		AA918EF8201F025D00640404 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA918EF7201F025D00640404 /* ViewController.m */; };
 		AA918EFB201F025D00640404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA918EF9201F025D00640404 /* Main.storyboard */; };
 		AA918EFD201F025D00640404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA918EFC201F025D00640404 /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		72A7866BBAC2981A6F0854E3 /* Pods-SuspendedBall Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuspendedBall Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuspendedBall Example/Pods-SuspendedBall Example.release.xcconfig"; sourceTree = "<group>"; };
+		AA8CD475201FF8D600FECF25 /* SuspendedBall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuspendedBall@2x.png"; sourceTree = "<group>"; };
+		AA8CD476201FF8D600FECF25 /* SuspendedBall@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuspendedBall@3x.png"; sourceTree = "<group>"; };
+		AA8CD479201FFE6C00FECF25 /* redpacket.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = redpacket.gif; sourceTree = "<group>"; };
 		AA918EF0201F025D00640404 /* SuspendedBall Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuspendedBall Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA918EF3201F025D00640404 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA918EF4201F025D00640404 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,7 +105,10 @@
 		AA918F09201F051400640404 /* SuspendedBall */ = {
 			isa = PBXGroup;
 			children = (
+				AA8CD475201FF8D600FECF25 /* SuspendedBall@2x.png */,
+				AA8CD476201FF8D600FECF25 /* SuspendedBall@3x.png */,
 				AA918F77201F35AE00640404 /* girl.gif */,
+				AA8CD479201FFE6C00FECF25 /* redpacket.gif */,
 				AA918F0A201F054000640404 /* SuspendedBall.h */,
 				AA918F0B201F054000640404 /* SuspendedBall.m */,
 			);
@@ -178,7 +187,10 @@
 			files = (
 				AA918F00201F025D00640404 /* LaunchScreen.storyboard in Resources */,
 				AA918F78201F35AE00640404 /* girl.gif in Resources */,
+				AA8CD477201FF8D600FECF25 /* SuspendedBall@2x.png in Resources */,
 				AA918EFD201F025D00640404 /* Assets.xcassets in Resources */,
+				AA8CD478201FF8D600FECF25 /* SuspendedBall@3x.png in Resources */,
+				AA8CD47A201FFE6C00FECF25 /* redpacket.gif in Resources */,
 				AA918EFB201F025D00640404 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

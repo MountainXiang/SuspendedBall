@@ -9,15 +9,14 @@
 #import "SuspendedBall.h"
 #import <SDWebImage/UIImage+GIF.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <UIImage+MultiFormat.h>
 
 @interface SuspendedBall()
 
 @property (nonatomic, strong)UIImageView *ball;
-//@property (nonatomic, strong)UITapGestureRecognizer *spreadGestureRecognizer;
 @property (nonatomic, strong)UIPanGestureRecognizer *panGesture;
 @property (nonatomic, assign) BOOL dragging;
-@property (nonatomic, strong)UIImage *gifImage;
-
+@property (nonatomic, strong)NSTimer *delayTimer;
 
 @end
 
@@ -25,10 +24,17 @@
 
 #pragma mark - Singlton
 + (instancetype)sharedInstance {
-    static id sharedInstance;
+    static SuspendedBall *sharedInstance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [self new];
+        sharedInstance.transparency = 0.4;
+        sharedInstance.delayTranslucent = YES;
+        sharedInstance.berthType = BerthType_Around;
+        sharedInstance.berthImage = [UIImage sd_animatedGIFWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"redpacket" ofType:@"gif"]]];
+        sharedInstance.draggingImage = [UIImage sd_animatedGIFWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"girl" ofType:@"gif"]]];
+        sharedInstance.berthImageRepeatCount = 1;
+        sharedInstance.draggingImageRepeatCount = 0;
     });
     return sharedInstance;
 }
@@ -43,21 +49,32 @@
 - (void)showInView:(UIView *)view {
     [view addSubview:self.ball];
     [view bringSubviewToFront:self.ball];
+    [self beginTimer];
 }
 
 - (void)hide {
+    [self stopTimer];
     [self.ball removeFromSuperview];
+}
+
+#pragma mark - Setter
+- (void)setBerthImageRepeatCount:(CGFloat)berthImageRepeatCount {
+    _berthImageRepeatCount = berthImageRepeatCount;
+    _berthImage.sd_imageLoopCount = _berthImageRepeatCount;
+}
+
+- (void)setDraggingImageRepeatCount:(CGFloat)draggingImageRepeatCount {
+    _draggingImageRepeatCount = draggingImageRepeatCount;
+    _draggingImage.sd_imageLoopCount = _draggingImageRepeatCount;
 }
 
 #pragma mark - Getter
 - (UIImageView *)ball {
     if (!_ball) {
-        _ball = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SuspendedBall"]];
+        _ball = [[UIImageView alloc] initWithImage:_berthImage];
         [_ball sizeToFit];
         _ball.userInteractionEnabled = YES;
         [_ball addGestureRecognizer:self.panGesture];
-        NSData *gifData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"girl" ofType:@"gif"]];
-        _gifImage = [UIImage sd_animatedGIFWithData:gifData];;
     }
     return _ball;
 }
@@ -89,35 +106,33 @@
         pointOffset = [gestureRecognizer locationInView:self.ball];
     });
     
-    UIImage *normalImage = [UIImage imageNamed:@"SuspendedBall"];
-    
     if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
-        [UIView animateWithDuration:1.0 animations:^{
+        [self stopTimer];
+        [UIView animateWithDuration:0.25 animations:^{
+            self.ball.alpha = 1;
         }];
     } else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
         if (!self.dragging) {
-            self.ball.image = _gifImage;
+            self.ball.image = _draggingImage;
             [self.ball sizeToFit];
         }
         self.dragging = YES;
         self.ball.center = CGPointMake(point.x + ballWidth / 2 - pointOffset.x, point.y  + ballWidth / 2 - pointOffset.y);
-//        [self.ball sd_setImageWithURL:[NSURL URLWithString:@"http://img.mp.itc.cn/upload/20160829/1455a31c239b4e458c849c68aae1aa7c_th.jpg"]];
     } else if (gestureRecognizer.state == UIGestureRecognizerStateEnded
                || gestureRecognizer.state == UIGestureRecognizerStateCancelled
                || gestureRecognizer.state == UIGestureRecognizerStateFailed) {
         self.dragging = NO;
-        self.ball.image = normalImage;
+        self.ball.image = _berthImage;
         [self.ball sizeToFit];
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.25 animations:^{
             self.ball.center = [self stickToPointByHorizontal];
         } completion:^(BOOL finished) {
-            
+            [self beginTimer];
         }];
     }
 }
 
 #pragma mark - StickToPoint
-
 - (CGPoint)stickToPointByHorizontal {
     CGRect screen = [UIScreen mainScreen].bounds;
     CGPoint center = self.ball.center;
@@ -164,6 +179,46 @@
         point.y = CGRectGetHeight(screen) - ballHeight / 2 - margin;
     }
     return point;
+}
+
+#pragma mark - Timer
+- (void)beginTimer {
+    _delayTimer = [NSTimer timerWithTimeInterval:4 target:self selector:@selector(timerFireMethod) userInfo:nil repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer:_delayTimer forMode:NSRunLoopCommonModes];
+}
+
+- (void)stopTimer {
+    [_delayTimer invalidate];
+    _delayTimer = nil;
+}
+
+- (void)timerFireMethod {
+    [UIView animateWithDuration:0.25 animations:^{
+        self.ball.alpha = self.transparency;
+    } completion:^(BOOL finished) {
+        [self stopTimer];
+    }];
+}
+
+#pragma mark - GIF Animation
+- (void)showBerthImage {
+    if ([_berthImage isGIF]) {
+        
+    } else {
+        self.ball.image = _berthImage;
+    }
+}
+
+- (void)showDraggingImage {
+    if ([_draggingImage isGIF]) {
+        
+    } else {
+        self.ball.image = _draggingImage;
+    }
+}
+
+- (void)controlGIFRepeatCount {
+    
 }
 
 @end

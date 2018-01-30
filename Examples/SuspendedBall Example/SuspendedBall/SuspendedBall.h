@@ -40,9 +40,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 悬浮球停留时的透明度（stayAlpha >= 0，1：不透明）
- * default: 0.5
+ * default: 0.4
  */
 @property (nonatomic, assign) CGFloat transparency;
+
+/**
+ * 停靠时的图片（可传入GIF图片）
+ * default: [UIImage sd_animatedGIFWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"redpacket" ofType:@"gif"]]]
+ */
+@property (nonatomic, strong)UIImage *berthImage;
+
+/**
+ * 拖动时的图片（可传入GIF图片）
+ * default: [UIImage sd_animatedGIFWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"girl" ofType:@"gif"]]]
+ */
+@property (nonatomic, strong)UIImage *draggingImage;
+
+/**
+ * 停靠GIF重复次数(0:无限循环)
+ * default: 1
+ */
+@property (nonatomic, assign) CGFloat berthImageRepeatCount;
+
+/**
+ * 拖动GIF重复次数(0:无限循环)
+ * default: 0
+ */
+@property (nonatomic, assign) CGFloat draggingImageRepeatCount;
 
 + (instancetype)sharedInstance;
 - (void)showInView:(UIView *)view;

@@ -33,10 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BerthType berthType;
 
 /**
- * 停靠后是否延迟透明化（效果类似于AssistiveTouch）
- * default: YES
+ * 停靠后延迟透明化（效果类似于AssistiveTouch,单位：秒）
+ * default: 4秒
  */
-@property (nonatomic, assign) BOOL delayTranslucent;
+@property (nonatomic, assign) NSTimeInterval delayTranslucentSeconds;
 
 /**
  * 悬浮球停留时的透明度（stayAlpha >= 0，1：不透明）
@@ -67,6 +67,12 @@ NS_ASSUME_NONNULL_BEGIN
  * default: 0
  */
 @property (nonatomic, assign) CGFloat draggingImageRepeatCount;
+
+/**
+ * 距离屏幕边缘的间距
+ * default: 2
+ */
+@property (nonatomic, assign) CGFloat margin;
 
 + (instancetype)sharedInstance;
 - (void)showInView:(UIView *)view;

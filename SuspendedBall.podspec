@@ -6,9 +6,8 @@ Pod::Spec.new do |s|
   s.license       = "MIT"
   s.author        = { "dashan.xiang" => "783600983@qq.com" }
   s.source        = { :git => "https://github.com/MountainXiang/SuspendedBall.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "SuspendedBall/*.{h,m}"
   s.requires_arc  =  true
   s.ios.deployment_target = '7.0'
-  s.dependency    = "SDWebImage"
+  s.dependency "SDWebImage"
 end

@@ -14,8 +14,8 @@
 		AA94977B202166FE009CD0E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA94977A202166FE009CD0E6 /* Assets.xcassets */; };
 		AA94977E202166FE009CD0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA94977C202166FE009CD0E6 /* LaunchScreen.storyboard */; };
 		AA949781202166FE009CD0E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA949780202166FE009CD0E6 /* main.m */; };
-		AA94978B2021675B009CD0E6 /* libSuspendedBall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9497882021675B009CD0E6 /* libSuspendedBall.a */; };
 		AA94978C2021675B009CD0E6 /* SuspendedBall.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA9497892021675B009CD0E6 /* SuspendedBall.bundle */; };
+		AA9497F82021ABCE009CD0E6 /* libSuspendedBall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9497F72021ABCE009CD0E6 /* libSuspendedBall.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		AA94977D202166FE009CD0E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA94977F202166FE009CD0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA949780202166FE009CD0E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA9497882021675B009CD0E6 /* libSuspendedBall.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuspendedBall.a; sourceTree = "<group>"; };
 		AA9497892021675B009CD0E6 /* SuspendedBall.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SuspendedBall.bundle; sourceTree = "<group>"; };
 		AA94978A2021675B009CD0E6 /* SuspendedBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendedBall.h; sourceTree = "<group>"; };
+		AA9497F72021ABCE009CD0E6 /* libSuspendedBall.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuspendedBall.a; sourceTree = "<group>"; };
 		E2D3E53108ECB4006813120E /* Pods-SuspendedBall_StaticLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuspendedBall_StaticLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuspendedBall_StaticLib/Pods-SuspendedBall_StaticLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA94978B2021675B009CD0E6 /* libSuspendedBall.a in Frameworks */,
+				AA9497F82021ABCE009CD0E6 /* libSuspendedBall.a in Frameworks */,
 				00BCCA07899769A96631545C /* libPods-SuspendedBall_StaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +105,7 @@
 		AA9497872021675B009CD0E6 /* SuspendedBall */ = {
 			isa = PBXGroup;
 			children = (
-				AA9497882021675B009CD0E6 /* libSuspendedBall.a */,
+				AA9497F72021ABCE009CD0E6 /* libSuspendedBall.a */,
 				AA9497892021675B009CD0E6 /* SuspendedBall.bundle */,
 				AA94978A2021675B009CD0E6 /* SuspendedBall.h */,
 			);
@@ -195,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		58FF7173DAE0BAE49333441A /* [CP] Embed Pods Frameworks */ = {

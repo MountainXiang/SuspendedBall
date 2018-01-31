@@ -237,7 +237,7 @@
 
 #pragma mark - GIF Animation
 - (void)showBerthImage {
-    if ([_berthImage isGIF]) {
+    if (_berthImage.images != nil) {
         self.ball.image = [UIImage animatedImageWithImages:_berthImage.images duration:_berthImage.duration];
         [self startBerthTimer];
     } else {
@@ -247,7 +247,7 @@
 }
 
 - (void)showDraggingImage {
-    if ([_draggingImage isGIF]) {
+    if (_draggingImage.images != nil) {
         self.ball.image = [UIImage animatedImageWithImages:_draggingImage.images duration:_draggingImage.duration];
         [self startDraggingTimer];
     } else {
